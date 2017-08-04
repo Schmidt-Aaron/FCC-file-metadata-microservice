@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    form(method='post', action='/', enctype='multipart/form-data')
+      input(type='file', id='theFile', name='theFile')
+      input(type='submit', id='submitButton', name='submit')
